@@ -1,0 +1,30 @@
+var canvas  = document.querySelector('#ice');
+var context = canvas.getContext('2d');
+
+context.beginPath();
+context.moveTo(100,200);
+context.lineTo(150,400);
+context.lineTo(200,200);
+context.closePath();
+context.stroke();
+context.fillStyle = '#AA6522';
+context.fill();
+
+context.beginPath();
+context.quadraticCurveTo(100, 200, 150, 200);
+context.lineTo(200,200);
+context.lineTo(180,170);
+context.lineTo(160,160);
+context.lineTo(150,160);
+context.lineTo(145,160);
+context.lineTo(143,160);
+context.lineTo(140,160);
+context.lineTo(130,160);
+context.lineTo(125,165);
+context.lineTo(130,160);
+context.lineTo(120,170);
+context.lineTo(110,180);
+context.closePath();
+context.stroke();
+context.fillStyle = '#8A0908';
+context.fill();
